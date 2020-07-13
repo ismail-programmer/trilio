@@ -1,0 +1,20 @@
+{
+  "name": "trilio",
+  "version": "1.0.0",
+  "description": "trilio app",
+  "main": "index.js",
+  "scripts": {
+    "watch:compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compiling:sass": "node-sass sass/main.scss css/style.comp.css",
+    "concat:css": "concat -o css/style.concat.css css/icons.css css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css "
+  },
+  "author": "Ismail",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  }
+}
